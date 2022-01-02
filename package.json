@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "name": "cuenta-atras-v2",
+  "description": "Cuenta atrás",
+  "version": "1.0.0",
+  "author": "Yannick Miñano <leoynick@gmail.com>",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "build:win64": "nextron build --win --x64",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
+    "daisyui": "^1.21.0",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.0.1",
+    "react-countdown-clock": "^2.9.0",
+    "react-player": "^2.9.0"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@types/node": "^14.14.31",
+    "@types/react": "^16.9.49",
+    "autoprefixer": "^10.4.1",
+    "electron": "^15.0.0",
+    "electron-builder": "^22.11.7",
+    "next": "^11.1.2",
+    "nextron": "^7.1.0",
+    "postcss": "^8.4.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^3.0.8",
+    "typescript": "^4.4.3"
+  }
+}
