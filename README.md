@@ -1,6 +1,6 @@
-<p align="center"><img src="https://imgur.com/1Roht5T"></p>
+<p align="center"><img src="https://i.imgur.com/1Roht5T.png"></p>
 
-<p align="center"><img src="https://imgur.com/UroHtZv"></p>
+<p align="center"><img src="https://i.imgur.com/UroHtZv.png"></p>
 
 **## Usage**
 
