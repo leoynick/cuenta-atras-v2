@@ -7,14 +7,17 @@ import ReactPlayer from "react-player";
 import CountDown from "../../components/CountDown";
 import RememberCard from "../../components/RememberCard";
 
+const WEEK = "entre semana";
+const WEEKEND = "Fin de semana";
+
 function Meeting() {
   const [isComplete, setIsComplete] = useState(false);
   const { query } = useRouter();
-  const { sec } = query;
-  const isWeekend = true;
+  const { sec, day } = query;
+  const isWeekend = day === "weekend";
 
   return (
-    <div className="bg-[url('/images/background.png')] flex min-h-screen bg-no-repeat bg-cover justify-center">
+    <div className="bg-[url('/images/background.png')] flex min-h-screen bg-no-repeat bg-cover justify-center bg-center">
       <div className="absolute left-10 top-5">
         <Link href="/home">
           <div className="w-5 h-2">
@@ -43,7 +46,7 @@ function Meeting() {
             <div className="flex items-center gap-24 ">
               <div className="bg-purple-500 rounded-md text-white flex gap-4 py-5 px-3 items-center w-64 text-center">
                 <h3 className="font-semibold text-xl">
-                  La reunión de fin de semana comienza en:
+                  La reunión de {isWeekend ? WEEKEND : WEEK} comienza en:
                 </h3>
               </div>
               <CountDown seconds={sec} onComplete={() => setIsComplete(true)} />
