@@ -1,6 +1,7 @@
-(https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4a60461d-d334-4039-adc3-9629f3c660f2/Captura_de_pantalla_2022-01-03_a_las_17.18.02.png)
+<p align="center"><img src="https://ibb.co/0G9d1Xg
+https://ibb.co/FHGtWq9"></p>
 
-(https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f36217cc-624b-4628-a902-1c1444cb64eb/Captura_de_pantalla_2022-01-03_a_las_17.18.11.png)
+<p align="center"><img src="https://ibb.co/FHGtWq9"></p>
 
 **## Usage**
 
