@@ -1,12 +1,13 @@
 import React from "react";
+import differenceInSeconds from "date-fns/differenceInSeconds";
+
 import Button from "../components/Button";
 
-const getSeconds = (date) =>
-  Math.abs(Math.floor((date.getTime() - Date.now()) / 1000));
+const getSeconds = (date) => Math.abs(differenceInSeconds(new Date(), date));
 
 function Home() {
-  const weekDate = new Date(2022, 1, 1, 20, 0, 0, 0);
-  const weekendDate = new Date(2022, 1, 2, 18, 30, 0, 0);
+  const weekDate = new Date().setHours(20, 30);
+  const weekendDate = new Date().setHours(18, 30);
 
   return (
     <div className="bg-[url('/images/background.png')] flex min-h-screen justify-center items-center flex-col bg-no-repeat bg-cover">
