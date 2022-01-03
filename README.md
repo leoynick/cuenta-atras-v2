@@ -1,38 +1,35 @@
-<p align="center"><img src="https://i.imgur.com/flcMvDC.png"></p>
+![Captura de pantalla 2022-01-03 a las 17.18.02.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4a60461d-d334-4039-adc3-9629f3c660f2/Captura_de_pantalla_2022-01-03_a_las_17.18.02.png)
 
-## Usage
+![Captura de pantalla 2022-01-03 a las 17.18.11.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f36217cc-624b-4628-a902-1c1444cb64eb/Captura_de_pantalla_2022-01-03_a_las_17.18.11.png)
 
-### Create an App
+**## Usage**
 
-```
-# with npx
-$ npx create-nextron-app my-app --example with-typescript-material-ui
-
-# with yarn
-$ yarn create nextron-app my-app --example with-typescript-material-ui
-
-# with pnpx
-$ pnpx create-nextron-app my-app --example with-typescript-material-ui
-```
-
-### Install Dependencies
+**### Install Dependencies**
 
 ```
-$ cd my-app
 
-# using yarn or npm
-$ yarn (or `npm install`)
+# Install Node
 
-# using pnpm
-$ pnpm install --shamefully-hoist
-```
+$ cd cuenta-atras-v2
 
-### Use it
+$ npm install
 
 ```
+
+**### Use it**
+
+```
+
 # development mode
-$ yarn dev (or `npm run dev` or `pnpm run dev`)
 
-# production build
-$ yarn build (or `npm run build` or `pnpm run build`)
+$ npm run dev
+
+# production build for Mac
+
+$ npm run build:mac
+
+# production build for Windows
+
+$ npm run build:win64
+
 ```

@@ -7,9 +7,10 @@ const CountDown = ({ seconds, onComplete }) => {
       seconds={seconds}
       color="#a854f7"
       alpha={0.9}
-      size={200}
+      size={225}
       weight={8}
-      fontSize="30px"
+      fontSize="53px"
+      showMilliseconds={false}
       onComplete={onComplete}
     />
   );

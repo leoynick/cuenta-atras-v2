@@ -7,8 +7,8 @@ import ReactPlayer from "react-player";
 import CountDown from "../../components/CountDown";
 import RememberCard from "../../components/RememberCard";
 
-const WEEK = "entre semana";
-const WEEKEND = "Fin de semana";
+const WEEK = "Entre Semana";
+const WEEKEND = "Fin de Semana";
 
 function Meeting() {
   const [isComplete, setIsComplete] = useState(false);
@@ -37,23 +37,22 @@ function Meeting() {
             loop={true}
           />
         </div>
-        <div className="h-35 my-20">
+        <div className="min-h-[33%] my-10 flex">
           {isComplete ? (
             <span className="font-semibold text-3xl text-purple-500 flex items-center">
-              ¡EMPEZAMOS
+              ¡COMENZAMOS!
             </span>
           ) : (
             <div className="flex items-center gap-24 ">
-              <div className="bg-purple-500 rounded-md text-white flex gap-4 py-5 px-3 items-center w-64 text-center">
-                <h3 className="font-semibold text-xl">
-                  La reunión de {isWeekend ? WEEKEND : WEEK} comienza en:
-                </h3>
-              </div>
+              <h3 className="font-semibold bg-purple-500 rounded-md text-xl py-5 px-3 text-white text-center">
+                La reunión de <br></br> {isWeekend ? WEEKEND : WEEK} comienza
+                en:
+              </h3>
               <CountDown seconds={sec} onComplete={() => setIsComplete(true)} />
             </div>
           )}
         </div>
-        <div className="mt-7 flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-4">
           <h3 className="text-xl font-bold">RECORDATORIOS</h3>
           <div className="flex gap-4">
             <RememberCard

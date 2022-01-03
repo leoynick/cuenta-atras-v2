@@ -6,7 +6,7 @@ import Button from "../components/Button";
 const getSeconds = (date) => Math.abs(differenceInSeconds(new Date(), date));
 
 function Home() {
-  const weekDate = new Date().setHours(20, 30);
+  const weekDate = new Date().setHours(20, 0);
   const weekendDate = new Date().setHours(18, 30);
 
   return (
