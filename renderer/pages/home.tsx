@@ -8,7 +8,7 @@ const weekendDate = new Date().setHours(18, 30, 0, 0);
 function Home() {
   return (
     <div className="bg-[url('/images/background.png')] flex min-h-screen justify-center items-center flex-col bg-no-repeat bg-cover bg-center">
-      <h2 className="font-medium tracking-wide text-3xl text-jw mb-9">
+      <h2 className="font-bold tracking-wide text-3xl text-jw mb-9 ">
         Selecciona Reunión
       </h2>
       <div className="flex gap-5">

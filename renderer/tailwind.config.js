@@ -5,6 +5,9 @@ module.exports = {
   ],
   darkMode: false,
   theme: {
+    fontFamily: {
+      sans: ["Montserrat"],
+    },
     extend: {
       colors: {
         jw: "#5b3c88",

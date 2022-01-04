@@ -47,7 +47,7 @@ function Meeting() {
         </Link>
       </div>
       <div className="flex items-center flex-col justify-center">
-        <h2 className="text-3xl text-jw relative text-center">
+        <h2 className="text-3xl text-jw relative text-center font-semibold">
           “A los que buscan a Jehová no les faltará nada bueno”<br></br>
           (Salmos 34:10)
         </h2>
