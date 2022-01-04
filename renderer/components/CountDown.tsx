@@ -5,7 +5,7 @@ const CountDown = ({ seconds, onComplete }) => {
   return (
     <ReactCountdownClock
       seconds={seconds}
-      color="#a854f7"
+      color="#5b3c88"
       alpha={0.9}
       size={225}
       weight={8}
@@ -16,4 +16,4 @@ const CountDown = ({ seconds, onComplete }) => {
   );
 };
 
-export default CountDown;
+export default React.memo(CountDown);

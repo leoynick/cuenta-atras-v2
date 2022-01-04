@@ -5,7 +5,11 @@ module.exports = {
   ],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        jw: "#5b3c88",
+      },
+    },
   },
   variants: {
     extend: {},
