@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "cuenta-atras",
-  "description": "Cuenta atrás-v2",
+  "name": "cuenta-atras-v2",
+  "description": "Cuenta atrás",
   "version": "1.0.0",
   "author": "Yannick Miñano <leoynick@gmail.com>",
   "main": "app/background.js",
