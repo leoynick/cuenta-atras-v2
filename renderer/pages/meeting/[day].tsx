@@ -1,13 +1,16 @@
 import { ArrowCircleLeftIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
 import React, { useState, useCallback, useMemo } from "react";
 import differenceInSeconds from "date-fns/differenceInSeconds";
 import Link from "next/link";
 import ReactPlayer from "react-player";
 
-import CountDown from "../../components/CountDown";
 import RememberCard from "../../components/RememberCard";
 
+const DynamicComponent = dynamic(() => import("../../components/CountDown"), {
+  ssr: false,
+});
 const WEEK = "Entre Semana";
 const WEEKEND = "Fin de Semana";
 
@@ -70,7 +73,7 @@ function Meeting() {
               <h3 className="font-semibold bg-jw rounded-md text-xl py-5 px-3 text-white text-center">
                 La reunión de <br /> {isWeekend ? WEEKEND : WEEK} comienza en:
               </h3>
-              <CountDown
+              <DynamicComponent
                 seconds={seconds}
                 onComplete={() => setIsComplete(true)}
               />

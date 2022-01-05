@@ -2,7 +2,7 @@ import React from "react";
 
 import Button from "../components/Button";
 
-const weekDate = new Date().setHours(20, 0, 0, 0);
+const weekDate = new Date().setHours(17, 7, 0, 0);
 const weekendDate = new Date().setHours(18, 30, 0, 0);
 
 function Home() {
